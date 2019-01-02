@@ -12,7 +12,7 @@ All &ast;.py and &ast;.ipynb files depend on Python3 modules numpy, matplotlib, 
 
 ## Folders and their contents
 
-### Fig1+S1_magnotether
+### [Fig1+S1_magnotether](Fig1+S1_magnotether)
 
 Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S1.
 
@@ -24,38 +24,38 @@ Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S
   * Depends on: [neo.io.WinEdrIO](https://github.com/NeuralEnsemble/python-neo/blob/0.3.0/neo/io/winedrio.py)
 * [mozmagno.py](mozmagno.py)
   * Python3 functions for processing mosquito data
-  * Depends on: traxio, pandas
+  * Depends on: [traxio.py](traxio.py), pandas(https://pandas.pydata.org/)
 * [Fig1KL+S1DEFG.ipynb](Fig1KL+S1DEFG.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for dark and light shapes under air and CO2
-  * Input: LiuVosshall_Raw_1KL+S1DEFG.zip: Python3 pickle files
+  * Input: [LiuVosshall_Raw_1KL+S1DEFG.zip](LiuVosshall_Raw_1KL+S1DEFG.zip): Python3 pickle files
   * Output:
-    * LiuVosshall_Data_1K.csv
-    * LiuVosshall_Data_1L.csv
-    * LiuVosshall_Data_S1D.csv
-    * LiuVosshall_Data_S1E.csv
-    * LiuVosshall_Data_S1E.csv
-    * LiuVosshall_Data_S1F.csv
-    * LiuVosshall_Data_S1G.csv
-  * Depends on: mozmagno
-* 20160811_fourshapes.ipynb
+    * [LiuVosshall_Data_1K.csv](LiuVosshall_Data_1K.csv)
+    * [LiuVosshall_Data_1L.csv](LiuVosshall_Data_1L.csv)
+    * [LiuVosshall_Data_S1D.csv](LiuVosshall_Data_S1D.csv)
+    * [LiuVosshall_Data_S1E.csv](LiuVosshall_Data_S1E.csv)
+    * [LiuVosshall_Data_S1E.csv](LiuVosshall_Data_S1E.csv)
+    * [LiuVosshall_Data_S1F.csv](LiuVosshall_Data_S1F.csv)
+    * [LiuVosshall_Data_S1G.csv](LiuVosshall_Data_S1G.csv)
+  * Depends on: [mozmagno.py](mozmagno.py)
+* [Fig1MNOP.ipynb](Fig1MNOP.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for mosquitoes fed blood and saline
-  * Input: LiuVosshall_Raw_1MNOP.zip: Python3 pickle files
+  * Input: [LiuVosshall_Raw_1MNOP.zip](LiuVosshall_Raw_1MNOP.zip): Python3 pickle files
   * Output:
-    * LiuVosshall_Data_1M.csv
-    * LiuVosshall_Data_1N.csv
-    * LiuVosshall_Data_1O.csv
-    * LiuVosshall_Data_1P.csv
-  * Depends on: mozmagno
-* magno_20150624.ipynb
+    * [LiuVosshall_Data_1M.csv](LiuVosshall_Data_1M.csv)
+    * [LiuVosshall_Data_1N.csv](LiuVosshall_Data_1N.csv)
+    * [LiuVosshall_Data_1O.csv](LiuVosshall_Data_1O.csv)
+    * [LiuVosshall_Data_1P.csv](LiuVosshall_Data_1P.csv)
+  * Depends on: [mozmagno.py](mozmagno.py)
+* [FigS1ABC.ipynb](FigS1ABC.ipynb)
   * Python3 notebook to interactively plot fly magnotether data
-  * Input: LiuVosshall_Raw_S1ABC.zip: WinEDR files
+  * Input: [LiuVosshall_Raw_S1ABC.zip](LiuVosshall_Raw_S1ABC.zip): WinEDR files
   * Output:
-    * LiuVosshall_Data_S1A.csv
-    * LiuVosshall_Data_S1B.csv
-    * LiuVosshall_Data_S1C.csv
-  * Depends on: magno
+    * [LiuVosshall_Data_S1A.csv](LiuVosshall_Data_S1A.csv)
+    * [LiuVosshall_Data_S1B.csv](LiuVosshall_Data_S1B.csv)
+    * [LiuVosshall_Data_S1C.csv](LiuVosshall_Data_S1C.csv)
+  * Depends on: [magno.py](magno.py)
 
-### Fig2+3+S2+S3_heatseeking
+### [Fig2+3+S2+S3_heatseeking](Fig2+3+S2+S3_heatseeking)
 
 Mosquito data obtained using the heat-seeking assay, graphed in Figures 2, 3, S2, and S3.
 
@@ -73,7 +73,7 @@ Mosquito data obtained using the heat-seeking assay, graphed in Figures 2, 3, S2
   * MATLAB function to manually count mosquitoes on the dark dot
   * Input: &ast;.mat data produced by heatseeking_assay_count.m
   * Output: &ast;.mat data incorporating manually generated counts
-* 20161017_heatseeking-groups.ipynb
+* Fig2.ipynb
   * Python3 notebook to interactively plot dot vs. blank heat-seeking data
   * Input: LiuVosshall_Raw_2.zip: &ast;topy.mat data within image directories
   * Output:
@@ -81,7 +81,7 @@ Mosquito data obtained using the heat-seeking assay, graphed in Figures 2, 3, S2
     * LiuVosshall_Data_2F.csv
     * LiuVosshall_Data_2G.csv
     * LiuVosshall_Data_2I.csv
-* 20180719_gr3.ipynb
+* Fig3.ipynb
   * Python3 notebook to interactively plot *Gr3* mutant heat-seeking data
   * Input: LiuVosshall_Raw_3.zip: &ast;topy.mat data within image directories
   * Output:
@@ -145,6 +145,7 @@ Computing dwell times of mosquitoes in the heat-seeking assay, graphed in Figure
 
 Software | Version | Source
 --- | --- | ---
-neo | 0.3.0 | https://github.com/NeuralEnsemble/python-neo/blob/0.3.0/neo/io/winedrio.py
+neo | 0.3.0 | https://pypi.org/project/neo/
+pandas | 0.20.1 | https://pandas.pydata.org/
 
 
