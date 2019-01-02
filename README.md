@@ -16,16 +16,16 @@ All &ast;.py and &ast;.ipynb files depend on Python3 modules numpy, matplotlib, 
 
 Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S1.
 
-* [traxio.py]
+* [traxio.py](traxio.py)
   * Reads in magnotether data
   * [Source](https://github.com/motmot/flytrax/blob/master/motmot/flytrax/traxio.py) (Straw & Dickinson, 2009)
-* magno.py
+* [magno.py](magno.py)
   * Python3 functions for processing fly data
-  * Depends on: neo.io.WinEdrIO
-* mozmagno.py
+  * Depends on: [neo.io.WinEdrIO](https://github.com/NeuralEnsemble/python-neo/blob/0.3.0/neo/io/winedrio.py)
+* [mozmagno.py](mozmagno.py)
   * Python3 functions for processing mosquito data
   * Depends on: traxio, pandas
-* 20160811_fourshapes.ipynb
+* [Fig1KL+S1DEFG.ipynb](Fig1KL+S1DEFG.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for dark and light shapes under air and CO2
   * Input: LiuVosshall_Raw_1KL+S1DEFG.zip: Python3 pickle files
   * Output:
