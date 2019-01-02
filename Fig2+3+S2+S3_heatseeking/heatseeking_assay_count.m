@@ -21,6 +21,8 @@ dir_name = dir_name{end};
 BR = imread([cur_dir '\' dir_name '_background\R_' dir_name '_background.tif']);
 
 count_data = struct('right',[],'right_pelt',[],'on_dot',0,'pos',[]);
+% load model from hsfit
+load('D:\Dropbox\labwork\scripts\heatseeking\hsfit.mat','model');
 
 for i=1:length(filelist)
     
@@ -37,7 +39,7 @@ for i=1:length(filelist)
         
         %sets the right entry to the count for the right picture of this number
         I = imread([cur_dir '/' filelist(i).name]);
-        [count_data(number).right, count_data(number).right_pelt, count_data(number).pos] = count_pelt(I,BR);
+        [count_data(number).right, count_data(number).right_pelt, count_data(number).pos] = count_pelt_model(I,BR,model);
         count_data(number).on_dot = 0;
     end
 end
