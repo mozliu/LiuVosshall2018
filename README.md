@@ -16,7 +16,7 @@ All &ast;.py and &ast;.ipynb files depend on Python3 modules numpy, matplotlib, 
 
 Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S1.
 
-* traxio.py
+* [traxio.py]
   * Reads in magnotether data
   * [Source](https://github.com/motmot/flytrax/blob/master/motmot/flytrax/traxio.py) (Straw & Dickinson, 2009)
 * magno.py
