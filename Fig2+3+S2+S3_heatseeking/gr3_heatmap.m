@@ -1,0 +1,49 @@
+function [orldot,orldotn,orlgr3dot,orlgr3dotn,gr3dot,gr3dotn] = gr3_heatmap()
+
+path = 'D:\Dropbox\labwork\behavior\heatseeking-pilot\';
+orl = {'20180627_2',...
+       '20180628_2',...
+       '20180629_3',...
+       '20180711_1',...
+       '20180712_1',...
+       '20180713_2'};
+orlgr3 = {'20180627_3',...
+       '20180628_1',...
+       '20180629_1',...
+       '20180711_2',...
+       '20180712_2',...
+       '20180713_1'};
+gr3 = {'20180627_1',...
+       '20180628_3',...
+       '20180629_2',...
+       '20180711_3',...
+       '20180712_3',...
+       '20180713_3'};
+
+templabels = [400,26,28.5,31,33.5,36,38.5,40,45,50,55,60];
+gr3cmax = zeros(1,12);
+
+[allpos,orldot,orldotn] = gather_all_pos(orl);
+for i=1:12
+    heatseeking_heatmap(allpos{i},path,['hmext_orl_' num2str(36) '.pdf'],1,720);
+    title(['orl-' num2str(36) '.pdf']);
+    %close
+end
+[allpos,orlgr3dot,orlgr3dotn] = gather_all_pos(orlgr3);
+for i=1:12
+    %gr3cmax(i) = heatseeking_heatmap(allpos{i},'','',1);
+    heatseeking_heatmap(allpos{i},path,['hmext_orlgr3_' num2str(36) '.pdf'],1,720);
+    title(['orlgr3-' num2str(36) '.pdf']);
+    %close
+end
+[allpos,gr3dot,gr3dotn] = gather_all_pos(gr3);
+for i=1:12
+    gr3cmax(i) = heatseeking_heatmap(allpos{i},'','',1);
+    heatseeking_heatmap(allpos{i},path,['hmext_gr3_' num2str(36) '.pdf'],1,720);
+    title(['gr3-' num2str(36) '.pdf']);
+    %close
+end
+
+%save(fullfile(path,'gr3_on_dot'),'orldot','orldotn','orlgr3dot','orlgr3dotn','gr3dot','gr3dotn');
+
+end
