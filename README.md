@@ -16,27 +16,27 @@ All &ast;.py and &ast;.ipynb files depend on Python3 modules numpy, matplotlib, 
 
 Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S1.
 
-* [traxio.py](traxio.py)
+* [traxio.py](/Fig1+S1_magnotether/traxio.py)
   * Reads in magnotether data
   * [Source](https://github.com/motmot/flytrax/blob/master/motmot/flytrax/traxio.py) (Straw & Dickinson, 2009)
-* [magno.py](magno.py)
+* [magno.py](/Fig1+S1_magnotether/magno.py)
   * Python3 functions for processing fly data
   * Depends on: [neo.io.WinEdrIO](https://github.com/NeuralEnsemble/python-neo/blob/0.3.0/neo/io/winedrio.py)
-* [mozmagno.py](mozmagno.py)
+* [mozmagno.py](/Fig1+S1_magnotether/mozmagno.py)
   * Python3 functions for processing mosquito data
   * Depends on: [traxio.py](traxio.py), pandas(https://pandas.pydata.org/)
-* [Fig1KL+S1DEFG.ipynb](Fig1KL+S1DEFG.ipynb)
+* [Fig1KL+S1DEFG.ipynb](/Fig1+S1_magnotether/Fig1KL+S1DEFG.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for dark and light shapes under air and CO2
-  * Input: [LiuVosshall_Raw_1KL+S1DEFG.zip](LiuVosshall_Raw_1KL+S1DEFG.zip): Python3 pickle files
+  * Input: [LiuVosshall_Raw_1KL+S1DEFG.zip](/Fig1+S1_magnotether/LiuVosshall_Raw_1KL+S1DEFG.zip): Python3 pickle files
   * Output:
-    * [LiuVosshall_Data_1K.csv](LiuVosshall_Data_1K.csv)
-    * [LiuVosshall_Data_1L.csv](LiuVosshall_Data_1L.csv)
-    * [LiuVosshall_Data_S1D.csv](LiuVosshall_Data_S1D.csv)
-    * [LiuVosshall_Data_S1E.csv](LiuVosshall_Data_S1E.csv)
-    * [LiuVosshall_Data_S1E.csv](LiuVosshall_Data_S1E.csv)
-    * [LiuVosshall_Data_S1F.csv](LiuVosshall_Data_S1F.csv)
-    * [LiuVosshall_Data_S1G.csv](LiuVosshall_Data_S1G.csv)
-  * Depends on: [mozmagno.py](mozmagno.py)
+    * [LiuVosshall_Data_1K.csv](/Fig1+S1_magnotether/LiuVosshall_Data_1K.csv)
+    * [LiuVosshall_Data_1L.csv](/Fig1+S1_magnotether/LiuVosshall_Data_1L.csv)
+    * [LiuVosshall_Data_S1D.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1D.csv)
+    * [LiuVosshall_Data_S1E.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1E.csv)
+    * [LiuVosshall_Data_S1E.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1E.csv)
+    * [LiuVosshall_Data_S1F.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1F.csv)
+    * [LiuVosshall_Data_S1G.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1G.csv)
+  * Depends on: [mozmagno.py](/Fig1+S1_magnotether/mozmagno.py)
 * [Fig1MNOP.ipynb](Fig1MNOP.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for mosquitoes fed blood and saline
   * Input: [LiuVosshall_Raw_1MNOP.zip](LiuVosshall_Raw_1MNOP.zip): Python3 pickle files
