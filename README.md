@@ -18,13 +18,13 @@ Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S
 
 * [traxio.py](/Fig1+S1_magnotether/traxio.py)
   * Reads in magnotether data
-  * [Source](https://github.com/motmot/flytrax/blob/master/motmot/flytrax/traxio.py) (Straw & Dickinson, 2009)
+  * Adapted from [(Straw & Dickinson, 2009)](https://github.com/motmot/flytrax/blob/master/motmot/flytrax/traxio.py) 
 * [magno.py](/Fig1+S1_magnotether/magno.py)
   * Python3 functions for processing fly data
   * Depends on: [neo.io.WinEdrIO](https://github.com/NeuralEnsemble/python-neo/blob/0.3.0/neo/io/winedrio.py)
 * [mozmagno.py](/Fig1+S1_magnotether/mozmagno.py)
   * Python3 functions for processing mosquito data
-  * Depends on: [traxio.py](traxio.py), pandas(https://pandas.pydata.org/)
+  * Depends on: [traxio.py](traxio.py), [pandas](https://pandas.pydata.org/)
 * [Fig1KL+S1DEFG.ipynb](/Fig1+S1_magnotether/Fig1KL+S1DEFG.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for dark and light shapes under air and CO2
   * Input: [LiuVosshall_Raw_1KL+S1DEFG.zip](/Fig1+S1_magnotether/LiuVosshall_Raw_1KL+S1DEFG.zip): Python3 pickle files
@@ -120,32 +120,38 @@ Mosquito data obtained using the heat-seeking assay, graphed in Figures 2, 3, S2
   * Output: [LiuVosshall_Data_S2E.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_S2E.csv)
   * Depends on: [gather_all_pos.m](/Fig2+3+S2+S3_heatseeking/gather_all_pos.m), [heatseeking_heatmap.m](/Fig2+3+S2+S3_heatseeking/heatseeking_heatmap.m)
 
-### Fig3_dwelling
+### [Fig3_dwelling](Fig3_dwelling)
 
 Computing dwell times of mosquitoes in the heat-seeking assay, graphed in Figure 3.
 
-* manual_dwell.m
+* [manual_dwell.m](/Fig3_dwelling/manual_dwell.m)
   * MATLAB function to count landings and takeoffs from heat-seeking assay images
-  * Input: LiuVosshall_Raw_3.zip: &ast;.tiff files within image directories
-  * Output: LiuVosshall_Data_3I.csv
-* manual_dwell_count.m
+  * Input: [LiuVosshall_Images_3.zip]: .tiff files
+  * Output: [LiuVosshall_Data_3I.csv](/Fig3_dwelling/LiuVosshall_Data_3I.csv)
+* [manual_dwell_count.m](/Fig3_dwelling/manual_dwell_count.m)
   * MATLAB function to compute dwell time and landings from landing and takeoff data
-* manual_dwell_wrapper.m
+* [manual_dwell_wrapper.m](/Fig3_dwelling/manual_dwell_wrapper.m)
   * MATLAB function to compute dwell times and landings across entire experiment
-  * Input: LiuVosshall_Data_3I.csv
+  * Input: [LiuVosshall_Data_3I.csv](/Fig3_dwelling/LiuVosshall_Data_3I.csv)
   * Output:
-    * LiuVosshall_Data_3F.csv
-    * LiuVosshall_Data_3G.csv
-* dwell_heatmap.m
+    * [LiuVosshall_Data_3F.csv](/Fig3_dwelling/LiuVosshall_Data_3F.csv)
+    * [LiuVosshall_Data_3G.csv](/Fig3_dwelling/LiuVosshall_Data_3G.csv)
+* [Fig3I.m](/Fig3_dwelling/Fig3I.m)
   * MATLAB function to plot heatmap of landings and takeoffs
-  * Input: LiuVosshall_Data_3I.csv
-  * Depends on: heatseeking_heatmap.m
+  * Input: [LiuVosshall_Data_3I.csv](/Fig3_dwelling/LiuVosshall_Data_3I.csv)
+  * Depends on: [heatseeking_heatmap.m](/Fig3_dwelling/heatseeking_heatmap.m)
 
-### Software versions
+## Software versions
+
+Software was run at various times, from most to least recent, on Windows 10 Home, Xubuntu 18.10, Mac OS X, and Ubuntu 12.10.
 
 Software | Version | Source
 --- | --- | ---
+Python3 | 3.6.1 :: Anaconda 4.4.0 | https://www.python.org/
+MATLAB | 9.3 (R2017b) | https://www.mathworks.com/products/matlab.html
+Image Processing Toolbox | 10.1 (R2017b) | https://www.mathworks.com/products/image.html
+numpy | 1.12.1 | http://www.numpy.org/
+matplotlib | 2.0.2 | https://matplotlib.org/
+csv | 1.0 | https://docs.python.org/3/library/csv.html
 neo | 0.3.0 | https://pypi.org/project/neo/
 pandas | 0.20.1 | https://pandas.pydata.org/
-
-
