@@ -37,23 +37,23 @@ Mosquito and fly data obtained using the magnotether, graphed in Figures 1 and S
     * [LiuVosshall_Data_S1F.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1F.csv)
     * [LiuVosshall_Data_S1G.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1G.csv)
   * Depends on: [mozmagno.py](/Fig1+S1_magnotether/mozmagno.py)
-* [Fig1MNOP.ipynb](Fig1MNOP.ipynb)
+* [Fig1MNOP.ipynb](/Fig1+S1_magnotether/Fig1MNOP.ipynb)
   * Python3 notebook to interactively plot mosquito magnotether data for mosquitoes fed blood and saline
-  * Input: [LiuVosshall_Raw_1MNOP.zip](LiuVosshall_Raw_1MNOP.zip): Python3 pickle files
+  * Input: [LiuVosshall_Raw_1MNOP.zip](/Fig1+S1_magnotether/LiuVosshall_Raw_1MNOP.zip): Python3 pickle files
   * Output:
-    * [LiuVosshall_Data_1M.csv](LiuVosshall_Data_1M.csv)
-    * [LiuVosshall_Data_1N.csv](LiuVosshall_Data_1N.csv)
-    * [LiuVosshall_Data_1O.csv](LiuVosshall_Data_1O.csv)
-    * [LiuVosshall_Data_1P.csv](LiuVosshall_Data_1P.csv)
-  * Depends on: [mozmagno.py](mozmagno.py)
-* [FigS1ABC.ipynb](FigS1ABC.ipynb)
+    * [LiuVosshall_Data_1M.csv](/Fig1+S1_magnotether/LiuVosshall_Data_1M.csv)
+    * [LiuVosshall_Data_1N.csv](/Fig1+S1_magnotether/LiuVosshall_Data_1N.csv)
+    * [LiuVosshall_Data_1O.csv](/Fig1+S1_magnotether/LiuVosshall_Data_1O.csv)
+    * [LiuVosshall_Data_1P.csv](/Fig1+S1_magnotether/LiuVosshall_Data_1P.csv)
+  * Depends on: [mozmagno.py](/Fig1+S1_magnotether/mozmagno.py)
+* [FigS1ABC.ipynb](/Fig1+S1_magnotether/FigS1ABC.ipynb)
   * Python3 notebook to interactively plot fly magnotether data
-  * Input: [LiuVosshall_Raw_S1ABC.zip](LiuVosshall_Raw_S1ABC.zip): WinEDR files
+  * Input: [LiuVosshall_Raw_S1ABC.zip](/Fig1+S1_magnotether/LiuVosshall_Raw_S1ABC.zip): WinEDR files
   * Output:
-    * [LiuVosshall_Data_S1A.csv](LiuVosshall_Data_S1A.csv)
-    * [LiuVosshall_Data_S1B.csv](LiuVosshall_Data_S1B.csv)
-    * [LiuVosshall_Data_S1C.csv](LiuVosshall_Data_S1C.csv)
-  * Depends on: [magno.py](magno.py)
+    * [LiuVosshall_Data_S1A.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1A.csv)
+    * [LiuVosshall_Data_S1B.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1B.csv)
+    * [LiuVosshall_Data_S1C.csv](/Fig1+S1_magnotether/LiuVosshall_Data_S1C.csv)
+  * Depends on: [magno.py](/Fig1+S1_magnotether/magno.py)
 
 ### [Fig2+3+S2+S3_heatseeking](Fig2+3+S2+S3_heatseeking)
 
@@ -61,64 +61,64 @@ Mosquito data obtained using the heat-seeking assay, graphed in Figures 2, 3, S2
 
 #### Producing timeseries and summary data of occupancy on Peltier
 
-* count_pelt_model.m
+* [count_pelt_model.m](/Fig2+3+S2+S3_heatseeking/count_pelt_model.m)
   * MATLAB function to count mosquitoes in a single frame from the heat-seeking assay using a bagged tree classifier
-  * Depends on: hsfit.mat (model including predictor, training data, and test data)
-* heatseeking_assay_count.m
+  * Depends on: [hsfit.mat](/Fig2+3+S2+S3_heatseeking/hsfit.mat) (model including predictor, training data, and test data)
+* [heatseeking_assay_count.m](/Fig2+3+S2+S3_heatseeking/heatseeking_assay_count.m)
   * MATLAB function to count mosquitoes over time of a heat-seeking assay
-  * Input: Directory of .tiff images, as contained in Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_&ast;.zip files
-  * Output: &ast;.mat data of counts within directory of .tiff images
-  * Depends on: count_pelt_model.m 
-* manual_heatseeking_count.m
+  * Input: Directory of .tiff images from heat-seeking assay, [stored externally here (LARGE FILES)](https://www.dropbox.com/sh/rhi7nitu6esvoxy/AAD7HZCkCANhkdW5wq56c-yMa?dl=0)
+  * Output: LiuVosshall_Raw_&ast;.zip
+  * Depends on: [count_pelt_model.m](/Fig2+3+S2+S3_heatseeking/count_pelt_model.m) 
+* [manual_heatseeking_count.m](/Fig2+3+S2+S3_heatseeking/manual_heatseeking_count.m)
   * MATLAB function to manually count mosquitoes on the dark dot
-  * Input: &ast;.mat data produced by heatseeking_assay_count.m
-  * Output: &ast;.mat data incorporating manually generated counts
-* Fig2.ipynb
+  * Input: LiuVosshall_Raw_&ast;.zip produced by heatseeking_assay_count.m
+  * Output: LiuVosshall_Raw_&ast;.zip incorporating manual scoring
+* [Fig2.ipynb](/Fig2+3+S2+S3_heatseeking/Fig2.ipynb)
   * Python3 notebook to interactively plot dot vs. blank heat-seeking data
-  * Input: LiuVosshall_Raw_2.zip: &ast;topy.mat data within image directories
+  * Input: [LiuVosshall_Raw_2.zip](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_2.zip): .mat data files
   * Output:
-    * LiuVosshall_Data_2DE.csv
-    * LiuVosshall_Data_2F.csv
-    * LiuVosshall_Data_2G.csv
-    * LiuVosshall_Data_2I.csv
-* Fig3.ipynb
+    * [LiuVosshall_Data_2DE.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_2DE.csv)
+    * [LiuVosshall_Data_2F.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_2F.csv)
+    * [LiuVosshall_Data_2G.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_2G.csv)
+    * [LiuVosshall_Data_2I.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_2I.csv)
+* [Fig3.ipynb](/Fig2+3+S2+S3_heatseeking/Fig3.ipynb)
   * Python3 notebook to interactively plot *Gr3* mutant heat-seeking data
-  * Input: LiuVosshall_Raw_3.zip: &ast;topy.mat data within image directories
+  * Input: [LiuVosshall_Raw_3.zip](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_3.zip): .mat data files
   * Output:
-    * LiuVosshall_Data_3AB.csv
-    * LiuVosshall_Data_3C.csv
-    * LiuVosshall_Data_3D.csv
-    * LiuVosshall_Data_3F.csv
-* 20171021_heatseeking.ipynb
+    * [LiuVosshall_Data_3AB.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_3AB.csv)
+    * [LiuVosshall_Data_3C.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_3C.csv)
+    * [LiuVosshall_Data_3D.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_3D.csv)
+    * [LiuVosshall_Data_3F.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_3F.csv)
+* [FigS2.ipynb](/Fig2+3+S2+S3_heatseeking/FigS2.ipynb)
   * Python3 notebook to interactively plot shuffled dot vs. blank heat-seeking data
-  * Input: LiuVosshall_Raw_S2.zip: &ast;topy.mat data within image directories
+  * Input: [LiuVosshall_Raw_S2.zip](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_S2.zip): .mat data files
   * Output:
-    * LiuVosshall_Data_S2AB.csv
-    * LiuVosshall_Data_S2C.csv
-    * LiuVosshall_Data_S2D.csv
-    * LiuVosshall_Data_S2F.csv
+    * [LiuVosshall_Data_S2AB.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_S2AB.csv)
+    * [LiuVosshall_Data_S2C.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_S2C.csv)
+    * [LiuVosshall_Data_S2D.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_S2D.csv)
+    * [LiuVosshall_Data_S2F.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_S2F.csv)
 
 #### Producing heatmaps of spatial occupancy on Peltier
 
-* gather_pos.m
+* [gather_pos.m](/Fig2+3+S2+S3_heatseeking/gather_pos.m)
   * MATLAB function to aggregate position data within an experiment
-* gather_all_pos.m
+* [gather_all_pos.m](/Fig2+3+S2+S3_heatseeking/gather_all_pos.m)
   * MATLAB function to aggregate position data across experiments
-  * Depends on: gather_pos.m
-* heatseeking_heatmap.m
+  * Depends on: [gather_pos.m](/Fig2+3+S2+S3_heatseeking/gather_pos.m)
+* [heatseeking_heatmap.m](/Fig2+3+S2+S3_heatseeking/heatseeking_heatmap.m)
   * MATLAB function to plot heatmap of aggregated position data
-* orl_heatmap.m
-  * Input: LiuVosshall_Raw_2.zip: &ast;.mat data within directories
-  * Output: LiuVosshall_Data_2H.csv
-  * Depends on: gather_all_pos.m, heatseeking_heatmap.m
-* gr3_heatmap.m
-  * Input: LiuVosshall_Raw_3.zip: &ast;.mat data within directories
-  * Output: LiuVosshall_Data_3E.csv
-  * Depends on: gather_all_pos.m, heatseeking_heatmap.m
-* shuffle_heatmap.m
-  * Input: LiuVosshall_Raw_S2.zip: &ast;.mat data within directories
-  * Output: LiuVosshall_Data_S2E.csv
-  * Depends on: gather_all_pos.m, heatseeking_heatmap.m
+* [Fig2H.m](/Fig2+3+S2+S3_heatseeking/Fig2H.m)
+  * Input: [LiuVosshall_Raw_2.zip](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_2.zip): .mat data files
+  * Output: [LiuVosshall_Data_2H.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_2H.csv)
+  * Depends on: [gather_all_pos.m](/Fig2+3+S2+S3_heatseeking/gather_all_pos.m), [heatseeking_heatmap.m](/Fig2+3+S2+S3_heatseeking/heatseeking_heatmap.m)
+* [Fig3E.m](/Fig2+3+S2+S3_heatseeking/Fig3E.m)
+  * Input: [LiuVosshall_Raw_3.zip](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_3.zip): .mat data files
+  * Output: [LiuVosshall_Data_3E.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_3E.csv)
+  * Depends on: [gather_all_pos.m](/Fig2+3+S2+S3_heatseeking/gather_all_pos.m), [heatseeking_heatmap.m](/Fig2+3+S2+S3_heatseeking/heatseeking_heatmap.m)
+* [FigS2E.m](/Fig2+3+S2+S3_heatseeking/FigS2E.m)
+  * Input: [LiuVosshall_Raw_S2.zip](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Raw_S2.zip): .mat data files
+  * Output: [LiuVosshall_Data_S2E.csv](/Fig2+3+S2+S3_heatseeking/LiuVosshall_Data_S2E.csv)
+  * Depends on: [gather_all_pos.m](/Fig2+3+S2+S3_heatseeking/gather_all_pos.m), [heatseeking_heatmap.m](/Fig2+3+S2+S3_heatseeking/heatseeking_heatmap.m)
 
 ### Fig3_dwelling
 
