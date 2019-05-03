@@ -116,29 +116,28 @@ Mosquito data obtained using the heat-seeking assay, graphed in Figures 2, 3, S2
   * Output: [LiuVosshall_Data_3E.csv](/Fig2+3+S3+S4_heatseeking/LiuVosshall_Data_3E.csv)
   * Depends on: [gather_all_pos.m](/Fig2+3+S3+S4_heatseeking/gather_all_pos.m), [heatseeking_heatmap.m](/Fig2+3+S3+S4_heatseeking/heatseeking_heatmap.m)
 * [FigS2E.m](/Fig2+3+S3+S4_heatseeking/FigS2E.m)
-  * Input: [LiuVosshall_Raw_S2.zip](/Fig2+3+S3+S4_heatseeking/LiuVosshall_Raw_S2.zip): .mat data files
-  * Output: [LiuVosshall_Data_S2E.csv](/Fig2+3+S3+S4_heatseeking/LiuVosshall_Data_S2E.csv)
+  * Input: [LiuVosshall_Raw_S3.zip](/Fig2+3+S3+S4_heatseeking/LiuVosshall_Raw_S3.zip): .mat data files
+  * Output: [LiuVosshall_Data_S3E.csv](/Fig2+3+S3+S4_heatseeking/LiuVosshall_Data_S3E.csv)
   * Depends on: [gather_all_pos.m](/Fig2+3+S3+S4_heatseeking/gather_all_pos.m), [heatseeking_heatmap.m](/Fig2+3+S3+S4_heatseeking/heatseeking_heatmap.m)
 
 ### [Fig4_dwelling](Fig4_dwelling)
 
-Computing dwell times of mosquitoes in the heat-seeking assay, graphed in Figure 3.
+Computing dwell times of mosquitoes in the heat-seeking assay, graphed in Figure 4.
 
 * [manual_dwell.m](/Fig4_dwelling/manual_dwell.m)
   * MATLAB function to count landings and takeoffs from heat-seeking assay images
   * Input: [LiuVosshall_Images_3.zip]: .tiff files
-  * Output: [LiuVosshall_Data_3I.csv](/Fig4_dwelling/LiuVosshall_Data_3I.csv)
+  * Output: [LiuVosshall_Data_4DF.csv](/Fig4_dwelling/LiuVosshall_Data_4DF.csv)
 * [manual_dwell_count.m](/Fig4_dwelling/manual_dwell_count.m)
   * MATLAB function to compute dwell time and landings from landing and takeoff data
 * [manual_dwell_wrapper.m](/Fig4_dwelling/manual_dwell_wrapper.m)
   * MATLAB function to compute dwell times and landings across entire experiment
-  * Input: [LiuVosshall_Data_3I.csv](/Fig4_dwelling/LiuVosshall_Data_3I.csv)
+  * Input: [dwell36.csv](/Fig4_dwelling/dwell36.csv)
   * Output:
-    * [LiuVosshall_Data_3F.csv](/Fig4_dwelling/LiuVosshall_Data_3F.csv)
-    * [LiuVosshall_Data_3G.csv](/Fig4_dwelling/LiuVosshall_Data_3G.csv)
+    * [LiuVosshall_Data_4DF.csv](/Fig4_dwelling/LiuVosshall_Data_4DF.csv)
 * [Fig3I.m](/Fig4_dwelling/Fig3I.m)
   * MATLAB function to plot heatmap of landings and takeoffs
-  * Input: [LiuVosshall_Data_3I.csv](/Fig4_dwelling/LiuVosshall_Data_3I.csv)
+  * Input: [LiuVosshall_Data_4DF.csv](/Fig4_dwelling/LiuVosshall_Data_4DF.csv)
   * Depends on: [heatseeking_heatmap.m](/Fig4_dwelling/heatseeking_heatmap.m)
 
 ## Software versions
