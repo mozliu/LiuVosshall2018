@@ -132,7 +132,7 @@ Computing dwell times of mosquitoes in the heat-seeking assay, graphed in Figure
   * MATLAB function to compute dwell time and landings from landing and takeoff data
 * [manual_dwell_wrapper.m](/Fig4_dwelling/manual_dwell_wrapper.m)
   * MATLAB function to compute dwell times and landings across entire experiment
-  * Input: [dwell36.csv](/Fig4_dwelling/dwell36.csv)
+  * Input: [dwell36.mat](/Fig4_dwelling/dwell36.mat)
   * Output:
     * [LiuVosshall_Data_4DF.csv](/Fig4_dwelling/LiuVosshall_Data_4DF.csv)
 * [Fig3I.m](/Fig4_dwelling/Fig3I.m)
